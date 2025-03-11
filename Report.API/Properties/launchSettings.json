@@ -1,0 +1,88 @@
+{
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Api-Dev": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7096;http://localhost:5096"
+    },
+    "Api-Local": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT ": "Local",
+        "JWT_AUDIENCE": "",
+        "JWT_ISSUER": "",
+        "JWT_KEY": "",
+        "JWT_ORIGIN": "",
+        "OMS_DB_HOST": "",
+        "OMS_DB_NAME": "",
+        "OMS_DB_PASSWORD": "",
+        "OMS_DB_PORT": "",
+        "OMS_DB_USERNAME": "",
+        "PAYMENT_DB_HOST": "",
+        "PAYMENT_DB_NAME": "",
+        "PAYMENT_DB_PASSWORD": "",
+        "PAYMENT_DB_PORT": "",
+        "PAYMENT_DB_USERNAME": "",
+        "REPORT_DB_HOST": "",
+        "REPORT_DB_NAME": "",
+        "REPORT_DB_PASSWORD": "",
+        "REPORT_DB_PORT": "",
+        "REPORT_DB_USERNAME": ""
+      },
+      "applicationUrl": "https://localhost:7096;http://localhost:5096"
+    },
+    "Api-Stage": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Staging"
+      },
+      "applicationUrl": "https://localhost:7096;http://localhost:5096"
+    },
+    "Api-Prod": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      },
+      "applicationUrl": "https://localhost:7096;http://localhost:5096"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "environmentVariables": {
+        "ASPNETCORE_HTTPS_PORTS": "8081",
+        "ASPNETCORE_HTTP_PORTS": "8080"
+      },
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:49530",
+      "sslPort": 44374
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@OmsFinancialReport_HostAddress = http://localhost:5207
+
+GET {{OmsFinancialReport_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
